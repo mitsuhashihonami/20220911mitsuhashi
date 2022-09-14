@@ -1,3 +1,13 @@
+html {
+  
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 1500px;
+  min-width: 1000px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -24,6 +34,9 @@
   text-decoration: none;
 }
 
+.top{
+  width: 100vw;
+}
 .top__img {
   text-align: right;
 }
@@ -38,11 +51,11 @@
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
   color: #C71585;
-  font-size: 70px;
+  font-size: 6vmax;
   line-height: 100px;
   position: absolute;
   top: 70px;
-  left: 250px;
+  left: 200px;
 }
 
 .top__group1-1 span {
@@ -59,7 +72,7 @@
 }
 
 .top__group2--txst2 {
-  font-size: 15px;
+  font-size: 1vw;
   color: darkgrey;
 }
 
@@ -69,13 +82,15 @@
 
 .top__group1-2 {
   position: absolute;
-  left: 260px;
+  left: 200px;
   top: 300px;
   line-height: 33px;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
-
+article{
+  width: 100%;
+}
 .news {
   width: 50%;
   margin-left: 400px;
@@ -99,7 +114,7 @@
 
 .news__item {
   display: flex;
-  padding: 15px;
+  padding: 4%;
   border-bottom: 1px solid #DDDDDD;
 }
 
@@ -107,8 +122,15 @@
   background-color: #C71585;
   border-radius: 20px;
   color: #fff;
-  padding: 2px 5px;
-  margin: 0 20px;
+  padding: 0.7% 1.5%;
+  margin: 0 4%;
+  font-size: 1vmin;
+}
+.date{
+  font-size: 1vw;
+}
+.news__ttl{
+  font-size: 1vw;
 }
 
 .news__content {
@@ -125,6 +147,7 @@
   height: 500px;
   padding-top: 30px;
   margin-top: 70px;
+  overflow-x: hidden;
 }
 
 .about__top {
@@ -147,34 +170,40 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+
 }
 
 .about__text-1 {
   color: dimgrey;
-  margin-bottom: 3em;
-  width: 400px;
+  margin-bottom: 4em;
+  width: 80%;
   height: auto;
-  font-size: 20px;
   line-height: 30px;
+  font-size: 1vw;
+  margin-left: 60%;
 }
 
 .about__text-2 {
   color: dimgray;
-  width: 400px;
+  width: 80%;
   height: auto;
-  font-size: 20px;
   line-height: 30px;
+  font-size: 1vw;
+  margin-left: 60%;
 }
 
 .about__img img {
-  width: 400px;
+  width: 45%;
   height: auto;
-  margin-left: 200px;
+  margin-left: 35%;
+
 }
 
 .service {
-  width: 100%;
-  margin-left: 120px;
+  width: 100vw;
+}
+.service__top{
+  margin-left: 15%;
 }
 
 .service__icon {
@@ -197,6 +226,7 @@
 .service__text {
   line-height: 30px;
   color: #fff;
+  font-size: 1vw;
 }
 
 .service__ttl {
@@ -208,9 +238,10 @@
   display: grid;
   grid-template-rows: 200px 200px;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
+  width: 70%;
   margin-top: 30px;
   margin-bottom: 70px;
+  margin-left: 15%;
 }
 
 .box1 {
@@ -223,7 +254,8 @@
 
 .box1 p {
   text-align: left;
-  margin-left: 30px;
+  margin: 0 30px;
+  font-size: 1vw;
 }
 
 .box2 {
@@ -239,6 +271,7 @@
   line-height: 30px;
   color: #fff;
   margin-left: 20px;
+  font-size: 1vw;
 }
 
 .box2 span {
@@ -258,6 +291,7 @@
   line-height: 30px;
   color: #fff;
   margin-left: 20px;
+  font-size: 1vw;
 }
 
 .box3 span {
@@ -331,7 +365,7 @@
   width: 100%;
 }
 .company__top {
-  margin-left: 360px;
+  margin-left: 30%;
 }
 table {
   display: flex;
@@ -368,7 +402,7 @@ td {
   padding-top: 50px;
 }
 .img__left {
-  width: 50%;
+  width: 50vw;
 }
 .img__left p {
   background-image: url(../img/recruit.png);
@@ -398,6 +432,7 @@ td {
   height: auto;
   text-align: center;
   margin-top: 100px;
+  position: relative;
 }
 
 .contact__ttl {
@@ -416,14 +451,23 @@ td {
 }
 
 .contact__btn {
-  width: 200px;
-  padding: 20px 30px;
+  padding: 2% 8%;
   color: #fff;
   border-radius: 30px;
   background: linear-gradient(90deg, #FF3399, #c71585);
   box-shadow: 0px 5px #C71585;
   text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
 }
+.mailicon{
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 80%;
+  margin-left: 2%;
+}
+
 
 
 .footer {
